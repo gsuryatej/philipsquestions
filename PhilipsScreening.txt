@@ -1,0 +1,23 @@
+1. What is IaC?
+Ans: Infrastructure as Code (IaC) is the managing and provisioning of infrastructure through code instead of through manual processes.
+With IaC, configuration files are created that contain your infrastructure specifications, which makes it easier to edit and distribute configurations. It also ensures that you provision the same environment every time.
+By codifying and documenting your configuration specifications, IaC aids configuration management and helps you to avoid undocumented, ad-hoc configuration changes.
+Version control is an important part of IaC, and your configuration files should be under source control just like any other software source code file. 
+Deploying your infrastructure as code also means that you can divide your infrastructure into modular components that can then be combined in different ways through automation.
+
+2. How do you find which processes are using a particular file?  (Not Used frequently so sourced from google)
+Ans: fuser file_name or ls -l /proc/*/fd/* | grep filename
+
+3.How to debug the problems encountered in shell script/program?
+Ans: set-x Display commands and their arguments as they are executed
+
+4. What are the various states that a Docker container can be in at any given point in time?
+Ans: Running
+     ReStarting
+     Exited
+     Can be crashlooped
+     
+5. Ansible ad-hoc command to create a file with 755 permission ?
+Ans: ansible <inventory> -m file -a "path=<path-to-file> state=touch mode=0755"
+     
+
